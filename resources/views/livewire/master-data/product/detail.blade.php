@@ -111,7 +111,7 @@
                 </div>
             </div>
 
-            @foreach ($product_units as $index => $unit)
+            {{-- @foreach ($product_units as $index => $unit)
                 @if (!$index)
                     <div class="col-md-7 mb-4">
                         <label>Nama Produk</label>
@@ -136,7 +136,7 @@
                 @else
                     
                 @endif
-            @endforeach
+            @endforeach --}}
             
             <div class="col-md-10 mb-4">
                 <button type="submit" class="btn btn-success mt-3 w-100">
