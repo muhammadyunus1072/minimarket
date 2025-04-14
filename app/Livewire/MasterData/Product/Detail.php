@@ -69,6 +69,7 @@ class Detail extends Component
             $this->is_active = $product->is_active ? true : false;
             $this->purchase_price = valueToImask($product->purchase_price);
         }else{
+            $this->type = Product::TYPE_PRODUCT_WITH_STOCK;
         }
 
         $this->product_category_choices = ProductCategoryRepository::all()->map(function ($item) {
