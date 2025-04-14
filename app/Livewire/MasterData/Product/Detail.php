@@ -59,7 +59,7 @@ class Detail extends Component
         {
             $product = ProductRepository::find(Crypt::decrypt($this->objId));
             $this->name = $product->name;
-            $this->product_category_id = $product->product_category_id;
+            $this->product_category_id = simple_encrypt($product->product_category_id);
             $this->type = $product->type;
             $this->description = $product->description;
             $this->expired_date = $product->expired_date;
