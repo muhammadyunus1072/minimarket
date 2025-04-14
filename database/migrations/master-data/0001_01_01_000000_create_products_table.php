@@ -35,7 +35,7 @@ return new class extends Migration
         }else{
             $table->index('name', 'products_name_idx');
             $table->index('pid', 'products_pid_idx');
-            $table->index('category_id', 'products_category_id_idx');
+            $table->index('product_category_id', 'products_product_category_id_idx');
             $table->index('expired_date', 'products_expired_date_idx');
             $table->index('type', 'products_type_idx');
             $table->index('supplier_id', 'products_supplier_id_idx');
